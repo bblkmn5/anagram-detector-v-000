@@ -2,9 +2,17 @@
 
 class Anagram
 
-attr_accessor :word
+  attr_accessor :word
 
-def initialize(word)
+  @@array_word = []
+  
+  def initialize(word)
   @word = word
+  @@array_word << word
+  end
+
+  def match
+    
+  end
 
 end
