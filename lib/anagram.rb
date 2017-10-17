@@ -11,7 +11,7 @@ class Anagram
   @@array_word << word
   end
 
-  def match
+  def match(word)
     word.map {|s| s.split.sort}.uniq
   end
 
