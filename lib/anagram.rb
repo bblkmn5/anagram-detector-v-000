@@ -12,6 +12,8 @@ class Anagram
   end
 
   def match(word)
+    if word == []
+      return []
     word.map {|s| s.split.sort}.uniq
   end
 
