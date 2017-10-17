@@ -16,5 +16,6 @@ class Anagram
       return []
     word.map {|s| s.split.sort}.uniq
   end
+  end
 
 end
