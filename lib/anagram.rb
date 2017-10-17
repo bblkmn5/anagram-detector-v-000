@@ -2,20 +2,21 @@
 
 class Anagram
 
-  attr_accessor :word
+  attr_accessor :anagrams
 
-  @@array_word = []
-
+  @@anagrams = []
+  
   def initialize(word)
   @word = word
-  @@array_word << word
   end
 
-  def match(word)
-    if word == []
-      return []
-    word.map {|s| s.split.sort}.uniq
+  def match(array)
+    array.select do |s| 
+      if s.split("").sort == self.s.split("").sort
+    @@anagrams << s
+      end
+    end
+    @@anagrams
   end
-  end
-
+  
 end
